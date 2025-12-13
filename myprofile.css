@@ -3,30 +3,7 @@ body{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-}
-
-#about{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
     color: white;
-    margin: 20px;
-}
-#about h2{
-    font-size: 2.5rem;
-}
-#about p{
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
-#about img{
-    object-fit: cover;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
 }
 
 .header{
@@ -80,4 +57,36 @@ body{
 .visit-btn:hover{
     background: white;
     color: black;
+}
+
+
+#webcontent{
+    display: flex;
+    gap: 5rem;
+    margin-top: 3rem;
+    align-items: center;
+}
+#webcontent img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.webcontent-left{
+    flex: 1;
+}
+
+.webcontent-right{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+@media (max-width: 600px) {
+    #webcontent{
+        flex-direction: column;
+    }
 }
